@@ -32,6 +32,9 @@ h1 {
     width: 24px; /* Ensure consistent icon size */
     height: 24px;
     margin-right: 10px; /* Space between icon and text */
+    display: inline-block;
+    vertical-align: middle; /* Aligns the icon with the text */
+    flex-shrink: 0;
 }
 
 
@@ -45,7 +48,7 @@ h1 {
     display: none;
 }
 
-.btn {
+/* .btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,16 +58,53 @@ h1 {
     width: 100%;
     font-weight: bold;
     text-align: center;
-    margin: 12px 0; /* Adjust margin for consistent spacing between buttons */
+    margin: 12px 0; 
     text-decoration: none;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 16px; */
     /* gap: 2em; */
-}
+/* } */
 
-.btn:hover {
+/* .btn:hover {
     background-color: #CC3882;
-}
+} */
+
+.shadow__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    margin: 12px 0; 
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px; 
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: #ff46a2;
+    box-shadow: 0 0 25px #ff46a2;
+  }
+  
+  .shadow__btn:hover {
+    box-shadow:
+      0 0 5px #ff00d0,
+      0 0 25px #ff00d0,
+      0 0 50px #ff00d0,
+      0 0 100px rgb(255, 0, 255);
+  }
+  
 
 .links {
     display: flex;
